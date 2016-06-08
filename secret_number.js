@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function() {
-  var secretNumber = Math.random(0,1000000);
+  var secretNumber = Math.floor(Math.random()*1000001);
   return function(){
     return secretNumber;
   };
